@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Денис Владимиров](https://up.htmlacademy.ru/htmlcss/27/user/978921).
-* Наставник: [Николай Думчев] (https://htmlacademy.ru/profile/nikopol_fw).
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 
 ---
 
