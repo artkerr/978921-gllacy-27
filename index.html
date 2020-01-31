@@ -24,15 +24,15 @@
       </div>
     </header>
     <main>
-      <h1>Магазин мороженного Глейси</h1>
+      <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
       <section>
-  		  <h2>Слайдер</h2>
+  		  <h2 class="visually-hidden">Слайдер</h2>
         <img src="img/slider-1.png" width="1065" height="859" alt="Крем-брюле и пломбир с малиновым джемом">
         <p>Крем-брюле и пломбир<br> с малиновым джемом</p>
         <button type="button">Давайте оба!</button>
       </section>	
       <section>
-        <h2>Акции</h2>
+        <h2 class="visually-hidden">Акции</h2>
 		    <div>	
  			    <h3>Малинка даром!</h3>
  		       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -45,7 +45,7 @@
 		   </div>
       </section>
       <section>
-        <h2>Наша продукция</h2>
+        <h2 class="visually-hidden">Наша продукция</h2>
        	<ul>
        	  <li>
              <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -70,7 +70,7 @@
         	</ul>
        </section>	
 		   <section>
-		     <h2>Преимущества</h2>
+		     <h2 class="visually-hidden">Преимущества</h2>
          <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 		      <ul>
 		   	   <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -84,13 +84,18 @@
 		     <a href="#">10 способов сервировки фруктовых щербетов кстолу</a>
 		   </section>
 		   <section>
-		     <h2>Подписка</h2>	
+		     <h2 class="visually-hidden">Подписка</h2>	
 		     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить  и не слать всякой ненужной ерунды. Честно =)</p>
 		     <input type="email" name="email">
 		     <button type="submit">Отправить</button>
 		   </section>
        <section>
-         <h2>Адрес магазина и офиса</h2>
+         <h2>Адрес главного офиса и офлайн-магазина:</h2>
+         <address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+         <p>Для заказов по телефону:</p>
+         <span>8 812 450-25-25</span>
+         <p>(с 10 до 20 ежедневно)</p>
+         <button type="button">Форма обратной связи</button>
          <img src="img/map.jpg" width="1302" height="430" alt="Адрес офиса и магазина, Санкт-Петербург, ул. Большая Конюшенная 19/8">
        </section>		
     </main>
@@ -112,5 +117,30 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
+      <section>
+        <h2 class="visually-hidden">Форма входа</h2>
+        <form action="#" method="get">
+          <input type="email" name="useremail"  placeholder="email@example.com">
+          <input type="password" name="password">
+          <button type="submit">Войти</button>
+        </form>  
+        <a href="#">Забыли пароль</a>
+        <a href="#">Новая регистрация</a>
+      </section>
+      <section>
+        <h2>Форма поиска</h2>
+        <input type="search" placeholder="Крем-брюле">
+      </section>
+      <section>
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p>Мы обязательно вам ответим!</p>
+        <form action="#" method="post">
+          <input type="text" name="user-name" placeholder="Имя Фамилия">
+          <input type="email" name="user-email"  placeholder="email@example.com">
+          <textarea name="message" id="" cols="30" rows="10">В свободной форме</textarea>
+          <button type="submit">Отправить</button>
+          <button type="button">Х</button>
+        </form>
+      </section>
   </body>
 </html>

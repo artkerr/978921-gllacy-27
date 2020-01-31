@@ -18,19 +18,53 @@
       <button type="button" name="search"></button>
       <button type="button" name="sign-in">Вход</button>
       <button type="button" name="basket">Корзина</button>
+      <span>2 товара</span>
       <div>
       	<p>С 10 до 20, ежедневно</p>
       	<p>8 812 450-25-25</p>
       </div>
     </header>
     <main>
+      <h1>Сливочное мороженное</h1>
       <ul>
         <li><a href="/">Главная</a></li>
-        <li><a href="#">>Каталог</a></li>
+        <li><a href="#">Каталог</a></li>
         <li><a>Сливочное</a></li>
       </ul>
       <section>
-        <h1>Сливочное мороженное</h1>
+        <section>
+          <form action="#" method="post">
+            <h2 class="visually-hidden">Фильтр</h2>
+            <label for="sort">Сортировка</label>
+            <select name="sort" id="sort">
+              <option value="popular">по популярности</option>
+              <option value="low-price">сначала не дорогие</option>
+              <option value="high-price">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+            <label for="price">Цена: 100 руб. – 500 руб.</label>
+              <input type="range" id="price">
+            <label for="fat">Жирность</label>
+              <label><input type="radio" id="fat" name="fat" value="0">0%</label>
+              <label><input type="radio" id="fat" name="fat" value="up to 10" checked>до 10%</label>
+              <label><input type="radio" id="fat" name="fat" value="up to 30">до 30%</label>
+              <label><input type="radio" id="fat" name="fat" value="more then 30">выше 30%</label>
+            <br>  
+            <label>Наполнители:
+              <input type="checkbox" id="chocolate" checked>
+              <label for="chocolate">шоколадные</label>
+              <input type="checkbox" id="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
+              <input type="checkbox" id="fruit">
+              <label for="fruit">фрукты</label>
+              <input type="checkbox" id="syrup">
+              <label for="jams">сиропы</label>
+              <input type="checkbox" id="syrup">
+              <label for="jams">джемы</label>
+              <button type="submit">Применить</button>
+            </label>
+          </form> 
+        </section>
         <ul>
           <li>
             <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
