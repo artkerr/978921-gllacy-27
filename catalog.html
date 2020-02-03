@@ -52,16 +52,16 @@
       </div>
     </header>
     <main>
-      <h1>Сливочное мороженное</h1>
       <ul>
         <li><a href="/">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a>Сливочное</a></li>
       </ul>
       <section>
+        <h1>Сливочное мороженное</h1>
         <section>
+          <h2 class="visually-hidden">Фильтр</h2>
           <form action="#" method="get">
-            <h2 class="visually-hidden">Фильтр</h2>
             <fieldset>
               <legend>Сортировка</legend>
               <select name="sort" id="sort">
@@ -71,14 +71,16 @@
                 <option value="fat">по жирности</option>
               </select>
             </fieldset>
-            <label for="price">Цена: 100 руб. – 500 руб.</label>
-              <input type="range" id="price">
+            <fieldset> 
+              <legend>Цена: 100 руб. – 500 руб.</legend>
+               <input type="range" id="price">
+            </fieldset> 
             <fieldset>
             <legend>Жирность</legend>
-              <label><input type="radio" id="fat" name="fat" value="0">0%</label>
-              <label><input type="radio" id="fat" name="fat" value="up to 10" checked>до 10%</label>
-              <label><input type="radio" id="fat" name="fat" value="up to 30">до 30%</label>
-              <label><input type="radio" id="fat" name="fat" value="more then 30">выше 30%</label>
+              <label><input type="radio" id="fat-0" name="fat" value="0">0%</label>
+              <label><input type="radio" id="fat-to-10" name="fat" value="up to 10" checked>до 10%</label>
+              <label><input type="radio" id="fat-up-to-30" name="fat" value="up to 30">до 30%</label>
+              <label><input type="radio" id="fat-more-10" name="fat" value="more then 30">выше 30%</label>
             </fieldset> 
             <fieldset>
               <legend>Наполнители:</legend>
@@ -90,7 +92,7 @@
                  <label for="fruit">фрукты</label>
                  <input type="checkbox" id="syrup">
                <label for="jams">сиропы</label>
-                 <input type="checkbox" id="syrup">
+                 <input type="checkbox" id="jams">
                <label for="jams">джемы</label>
             </fieldset>
             <button type="submit">Применить</button>
