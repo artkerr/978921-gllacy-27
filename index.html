@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-        <head>
-          <meta charset="utf-8">
-          <title>Магазин Глейси</title>
-          <link rel="stylesheet" href="css/style.css">
-        </head>
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body>
     <header>
       <a><img src="img/gllacy.svg" alt="Магазин мороженного Глейси" width="154" height="64"></a>
@@ -24,20 +24,50 @@
         </ul>	
       </nav>
       <button type="button" name="search"></button>
+        <div>
+          <form action="#" method="get"></form>
+            <input type="search" placeholder="Крем-брюле">
+          </form> 
+        </div>
       <button type="button" name="sign-in">Вход</button>
+        <div>
+          <form action="#" method="get">
+            <input type="email" name="useremail"  placeholder="email@example.com">
+            <input type="password" name="password">
+            <button type="submit">Войти</button>
+          </form>  
+          <a href="#">Забыли пароль</a>
+          <a href="#">Новая регистрация</a>
+        </div>
       <button type="button" name="basket">Корзина</button>
       <div>
-        <p>С 10 до 20, ежедневно</p>
-      	<p>8 812 450-25-25</p>
+        <p>С 10 до 20, ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
     </header>
     <main>
       <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
       <section>
   		  <h2 class="visually-hidden">Слайдер</h2>
-        <img src="img/slider-1.png" width="1065" height="859" alt="Крем-брюле и пломбир с малиновым джемом">
-        <p>Крем-брюле и пломбир<br> с малиновым джемом</p>
-        <button type="button">Давайте оба!</button>
+        <ul>
+          <li>
+            <img src="img/slider-1.jpg" width="1065" height="859" alt="Крем-брюле и пломбир с малиновым джемом">
+            <p>Крем-брюле и пломбир<br> с малиновым джемом</p>
+            <a href="#">Давайте оба!</a>
+          </li>  
+           <li class="visually-hidden">
+            <img src="img/slider-2.jpg" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
+            <p>Шоколадный пломбир<br> и лимонный сорбет </p>
+            <a href="#">Давайте оба!</a>
+          </li> 
+           <li class="visually-hidden">
+            <img src="img/slider-3.jpg" width="1065" height="859" alt="Пломбир с помадкой и клубничный щербет">
+            <p>Пломбир с помадкой<br> и клубничный щербет</p>
+            <a href="#">Давайте оба!</a>
+          </li> 
+        </ul>
+        <button type="button" name="slider-1" aria-label="Слайдер 1"></button>
+        <button type="button" name="slider-2" aria-label="Слайдер 2"></button>
+        <button type="button" name="slider-3" aria-label="Слайдер 3"></button>
       </section>	
       <section>
         <h2 class="visually-hidden">Акции</h2>
@@ -53,7 +83,7 @@
 		   </div>
       </section>
       <section>
-        <h2 class="visually-hidden">Наша продукция</h2>
+        <h2 class="visually-hidden">Хиты продаж</h2>
        	<ul>
        	  <li>
              <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -94,14 +124,16 @@
 		   <section>
 		     <h2 class="visually-hidden">Подписка</h2>	
 		     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить  и не слать всякой ненужной ерунды. Честно =)</p>
-		     <input type="email" name="email">
-		     <button type="submit">Отправить</button>
+         <form action="#" method="get">
+		       <input type="email" name="email">
+		       <button type="submit">Отправить</button>
+         </form>> 
 		   </section>
        <section>
          <h2>Адрес главного офиса и офлайн-магазина:</h2>
-         <address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+         <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
          <p>Для заказов по телефону:</p>
-         <span>8 812 450-25-25</span>
+         <span><a href="tel:+78124502525">8 812 450-25-25</a></span>
          <p>(с 10 до 20 ежедневно)</p>
          <button type="button">Форма обратной связи</button>
          <img src="img/map.jpg" width="1302" height="430" alt="Адрес офиса и магазина, Санкт-Петербург, ул. Большая Конюшенная 19/8">
@@ -125,20 +157,7 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
-      <section>
-        <h2 class="visually-hidden">Форма входа</h2>
-        <form action="#" method="get">
-          <input type="email" name="useremail"  placeholder="email@example.com">
-          <input type="password" name="password">
-          <button type="submit">Войти</button>
-        </form>  
-        <a href="#">Забыли пароль</a>
-        <a href="#">Новая регистрация</a>
-      </section>
-      <section>
-        <h2>Форма поиска</h2>
-        <input type="search" placeholder="Крем-брюле">
-      </section>
+      
       <section>
         <h2 class="visually-hidden">Обратная связь</h2>
         <p>Мы обязательно вам ответим!</p>
@@ -150,6 +169,5 @@
           <button type="button">Х</button>
         </form>
       </section>
-
   </body>
 </html>
