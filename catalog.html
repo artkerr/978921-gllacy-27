@@ -26,10 +26,29 @@
       <button type="button" name="search"></button>
       <button type="button" name="sign-in">Вход</button>
       <button type="button" name="basket">Корзина</button>
-      <span>2 товара</span>
+        <div>
+          <span>2 товара</span>
+          <table>
+            <tr>
+              <td><a href="#" aria-label="Удалить товар">X</a></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х 200 руб.</td>
+              <td>300 руб.</td>
+            </tr>  
+            <tr>
+              <td><a href="#" aria-label="Удалить товар">X</a></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х 300 руб.</td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <span>Итого: 750 руб.</span>
+          <form action="#" method="post">
+            <button class="submit">Оформть заказа</button>
+          </form>
+        </div>
       <div>
-      	<p>С 10 до 20, ежедневно</p>
-      	<p>8 812 450-25-25</p>
+      	<p>С 10 до 20, ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
     </header>
     <main>
@@ -41,36 +60,40 @@
       </ul>
       <section>
         <section>
-          <form action="#" method="post">
+          <form action="#" method="get">
             <h2 class="visually-hidden">Фильтр</h2>
-            <label for="sort">Сортировка</label>
-            <select name="sort" id="sort">
-              <option value="popular">по популярности</option>
-              <option value="low-price">сначала не дорогие</option>
-              <option value="high-price">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
+            <fieldset>
+              <legend>Сортировка</legend>
+              <select name="sort" id="sort">
+                <option value="popular">по популярности</option>
+                <option value="low-price">сначала не дорогие</option>
+                <option value="high-price">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </fieldset>
             <label for="price">Цена: 100 руб. – 500 руб.</label>
               <input type="range" id="price">
-            <label for="fat">Жирность</label>
+            <fieldset>
+            <legend>Жирность</legend>
               <label><input type="radio" id="fat" name="fat" value="0">0%</label>
               <label><input type="radio" id="fat" name="fat" value="up to 10" checked>до 10%</label>
               <label><input type="radio" id="fat" name="fat" value="up to 30">до 30%</label>
               <label><input type="radio" id="fat" name="fat" value="more then 30">выше 30%</label>
-            <br>  
-            <label>Наполнители:
-              <input type="checkbox" id="chocolate" checked>
-              <label for="chocolate">шоколадные</label>
-              <input type="checkbox" id="sugar" checked>
-              <label for="sugar">сахарные присыпки</label>
-              <input type="checkbox" id="fruit">
-              <label for="fruit">фрукты</label>
-              <input type="checkbox" id="syrup">
-              <label for="jams">сиропы</label>
-              <input type="checkbox" id="syrup">
-              <label for="jams">джемы</label>
-              <button type="submit">Применить</button>
-            </label>
+            </fieldset> 
+            <fieldset>
+              <legend>Наполнители:</legend>
+               <input type="checkbox" id="chocolate" checked>
+                 <label for="chocolate">шоколадные</label>
+               <input type="checkbox" id="sugar" checked>
+                 <label for="sugar">сахарные присыпки</label>
+               <input type="checkbox" id="fruit">
+                 <label for="fruit">фрукты</label>
+                 <input type="checkbox" id="syrup">
+               <label for="jams">сиропы</label>
+                 <input type="checkbox" id="syrup">
+               <label for="jams">джемы</label>
+            </fieldset>
+            <button type="submit">Применить</button>
           </form> 
         </section>
         <ul>
@@ -137,13 +160,13 @@
         </ul>
       </section>
       <ul>
-         <li><a><</a></li> 
-         <li><a href="#">1</a></li>
-         <li><a href="#">2</a></li>
-         <li><a href="#">3</a></li>
-         <li><a href="#">4</a></li>
-         <li><a href="#">5</a></li>
-         <li><a href="#">></a></li>
+         <li><a aria-label="Назад">></a></li> 
+         <li><a href="#" aria-label="Страница 1">1</a></li>
+         <li><a href="#" aria-label="Страница 2">2</a></li>
+         <li><a href="#" aria-label="Страница 3">3</a></li>
+         <li><a href="#" aria-label="Страница 4">4</a></li>
+         <li><a href="#" aria-label="Страница 5">5</a></li>
+         <li><a href="#" aria-label="Вперед">></a></li>
       </ul>
     </main>
     <footer>
@@ -164,24 +187,5 @@
       	<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
-    <section >
-      <h2 class="visually-hidden">Корзина с товарами</h2>
-      <table>
-        <tr>
-          <td>X</td>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг х 200 руб.</td>
-          <td>300 руб.</td>
-        </tr>  
-        <tr>
-          <td>X</td>
-          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг х 300 руб.</td>
-          <td>450 руб.</td>
-        </tr>
-      </table>
-      <span>Итого: 750 руб.</span>
-      <button class="submit">Оформть заказа</button>
-    </section>
   </body>
 </html>
