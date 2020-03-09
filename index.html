@@ -1,9 +1,9 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="ru">
     <head>
       <meta charset="utf-8">
       <title>Магазин Глейси</title>
-      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
     </head>
@@ -24,66 +24,69 @@
               </li>
               <li class="nav-item"><a href="#">Доставка и оплата</a></li>
               <li class="nav-item"><a href="#">О Компании</a></li>
-            </ul>	
+            </ul>
           </nav>
           <button type="button" class="search-button" name="search"> </button>
             <div class="search-area">
-              <form action="#" method="get">
-                <input type="search" placeholder="Крем-брюле">
-              </form> 
+              <form class="" method="get">
+                <input class="search-field" type="search" placeholder="Крем-брюле">
+              </form>
             </div>
           <button type="button" class="user-nav-button" name="sign-in">Вход</button>
             <div class="user-nav">
-              <form action="#" method="get">
-                <input type="email" name="useremail"  placeholder="email@example.com">
-                <input type="password" name="password">
-                <button type="submit">Войти</button>
-              </form>  
-              <a href="#">Забыли пароль</a>
+              <form class="user-nav-form" method="get">
+                <input class="email-field field" type="email" name="user-email"  placeholder="email@example.com">
+                <input class="password-field field" type="password" name="password" placeholder="*******">
+                <button class="login-button" type="submit">Войти</button>
+              </form>
+              <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </div>
           <button type="button" class="cart" name="basket">Пусто</button>
       </div>
         <div class="opening-hours">
-          <p>С 10 до 20, ежедневно<br> <a href="tel:+78124502525">8 812 450-25-25</a></p>
+          <p>С 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
         </div>
       </header>
       <main class="main-content containter">
         <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
         <section class="slider">
     		  <h2 class="visually-hidden">Слайдер</h2>
-          <ul class="slider-list">
-            <li class="slider-item">
+          <div class="slider-list">
+            <div class="slider-item">
               <img src="img/slider-1.png" width="1065" height="859" alt="Крем-брюле и пломбир с малиновым джемом">
-              <p class="title">Крем-брюле и пломбир<br> с малиновым джемом</p>
-              <a class="slider-button" href="#">Давайте оба!</a>
-            </li>  
-             <li class="slider-item">
+              <div class="slider-text">
+                <p class="title">Крем-брюле и пломбир с малиновым джемом</p>
+                <a class="slider-button btn" href="#">Давайте оба!</a>
+              </div>
+            </div>
+             <div class="slider-item">
               <img src="img/slider-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
-              <p class="title">Шоколадный пломбир<br> и лимонный сорбет </p>
-              <a class="slider-button"  href="#">Давайте оба!</a>
-            </li> 
-             <li class="slider-item">
+               <div class="slider-text">
+                 <p class="title">Шоколадный пломбир и лимонный сорбет </p>
+                 <a class="slider-button btn"  href="#">Давайте оба!</a>
+               </div>
+             </div>
+             <div class="slider-item">
               <img src="img/slider-3.png" width="1065" height="859" alt="Пломбир с помадкой и клубничный щербет">
-              <p class="title">Пломбир с помадкой<br> и клубничный щербет</p>
-              <a class="slider-button"  href="#">Давайте оба!</a>
-            </li> 
-          </ul>
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-          <script src="js/slick.min.js"></script>
-          <script src="js/slider.js"></script>
-        </section>	
+               <div class="slider-text">
+                 <p class="title">Пломбир с помадкой и клубничный щербет</p>
+                 <a class="slider-button btn"  href="#">Давайте оба!</a>
+               </div>
+             </div>
+          </div>
+        </section>
         <section class="promo">
           <h2 class="visually-hidden">Акции</h2>
-  		    <div class="first-promo">	
+  		    <div class="first-promo">
    			    <h3 class="title">Малинка даром!</h3>
    		       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-   			     <a class="promo-button" href="#">Хочу варенье!</a>
+   			     <a class="promo-button btn" href="#">Хочу варенье!</a>
   		    </div>
   		   <div class="second-promo">
   		     <h3 class="title">Шоколадки даром!</h3>
   		  	   <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-  		  	   <a class="promo-button" href="#">Хочу шоколадки!</a>
+  		  	   <a class="promo-button btn" href="#">Хочу шоколадки!</a>
   		   </div>
         </section>
         <section class="bestsellers">
@@ -93,7 +96,7 @@
          	  	<a class="goods-link" href="#">
                 <img class="round" src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <p class="price">310&#8381;<span>/кг</span></p>
-              </a> 
+              </a>
                <a class="items-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </li>
             <li class="goods-item">
@@ -116,9 +119,9 @@
                	<p class="price">415&#8381;<span>/кг</span></p>
                </a>
                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-             </li>	
+             </li>
           	</ul>
-         </section>	
+         </section>
   		   <section class="features">
   		     <h2 class="visually-hidden">Преимущества</h2>
            <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -135,18 +138,19 @@
   		       <a href="#">10 способов сервировки<br> фруктовых щербетов к<br>столу</a>
   		     </section>
   		     <section class="subscribe">
-  		       <h2 class="visually-hidden">Подписка</h2> 
+  		       <h2 class="visually-hidden">Подписка</h2>
   		       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить  и не слать всякой ненужной ерунды. Честно =)</p>
              <form action="#" class="subscribe-form" method="post">
   		         <input type="email" class="subscribe-email" name="email" value="email@example.com">
-  		         <button type="submit" class="subscribe-button">Отправить</button>
-             </form> 
+  		         <button type="submit" class="subscribe-button btn">Отправить</button>
+             </form>
   		     </section>
          </div>
          <section class="contacts">
            <div class="map">
-
-         		  <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт-Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=37.622504%2C55.753215&sspn=1.093140%2C0.397310&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKaoaXjf" width="1200" height="430" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+         		  <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт-Петербург</a>
+             <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=37.622504%2C55.753215&sspn=1.093140%2C0.397310&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+             <iframe src="https://yandex.ru/map-widget/v1/-/CKaoaXjf" width="1200" height="430" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
          	 </div>
          	 <span class="map-pin"></span>
          	 <div class="adress">
@@ -155,10 +159,10 @@
              <p>Для заказов по телефону:</p>
              <span><a href="tel:+78124502525">8 812 450-25-25</a></span>
              <p>(с 10 до 20 ежедневно)</p>
-             <button type="button" class="feedback-button">Форма обратной связи</button>
+             <button type="button" class="feedback-button btn">Форма обратной связи</button>
            </div>
 
-         </section>		
+         </section>
       </main>
       <footer class="footer containter">
         <ul class="socials-list">
@@ -176,20 +180,21 @@
         <div class="developer">
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="HTML Academy"></a>
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
-        </div>
-        
+        </div
       </footer>
-        
         <section class="modal">
           <h2 class="visually-hidden">Обратная связь</h2>
-          <p>Мы обязательно вам ответим!</p>
-          <form action="#" method="post">
-            <input type="text" name="user-name" placeholder="Имя Фамилия">
-            <input type="email" name="user-email"  placeholder="email@example.com">
-            <textarea name="message" id="user-message" cols="30" rows="10">В свободной форме</textarea>
-            <button type="submit">Отправить</button>
-            <button type="button">Х</button>
+          <p class="title">Мы обязательно вам ответим!</p>
+          <form class="feedback" method="post">
+            <input class="user-name-field field" name="user-name" placeholder="Имя Фамилия">
+            <input class="email-field field" name="user-email"  placeholder="email@example.com">
+            <textarea class="mesagge-area field" name="message" id="user-message" cols="30" rows="10">В свободной форме</textarea>
+            <button class="modal-button btn" type="submit">Отправить</button>
+            <button class="close-button" type="button"></button>
           </form>
         </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/slider.js"></script>
     </body>
   </html>

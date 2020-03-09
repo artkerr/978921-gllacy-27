@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Сливочное мороженное - Магазин Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,7 +15,7 @@
         <ul class="nav-list">
           <li class="nav-item active"><a>Каталог</a>
             <ul class="catalog-nav-list">
-              <li class="catalog-nav-item"><a href="#">Новинки</a></li>
+              <li class="catalog-nav-item"><a>Новинки</a></li>
               <li class="catalog-nav-item"><a href="#">Сливочное</a></li>
               <li class="catalog-nav-item"><a href="#">Щербеты</a></li>
               <li class="catalog-nav-item"><a href="#">Фруктовый лед</a></li>
@@ -24,47 +24,49 @@
           </li>
           <li class="nav-item"><a href="#">Доставка и оплата</a></li>
           <li class="nav-item"><a href="#">О Компании</a></li>
-        </ul>	
+        </ul>
       </nav>
       <button type="button" class="search-button" name="search"></button>
         <div class="search-area">
-          <form action="#" method="get">
-            <input type="search" placeholder="Крем-брюле">
-          </form> 
+          <form class="" method="get">
+            <input class="search-field" type="search" placeholder="Крем-брюле">
+          </form>
         </div>
       <button type="button" class="user-nav-button" name="sign-in">Вход</button>
         <div class="user-nav">
-          <form action="#" method="get">
-            <input type="email" name="useremail"  placeholder="email@example.com">
-            <input type="password" name="password">
-            <button type="submit">Войти</button>
-          </form>  
-          <a href="#">Забыли пароль</a>
+          <form class="user-nav-form" method="get">
+            <input class="email-field" type="email" name="user-email"  placeholder="email@example.com">
+            <input class="password-field" type="password" name="password" placeholder="*******">
+            <button class="login-button" type="submit">Войти</button>
+          </form>
+          <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
         </div>
-      <button type="button" class="cart active" name="basket">2 товара</button>
-        <div class="cart-item">
-          <span>2 товара</span>
-          <table>
-            <tr>
-              <td><a href="#" aria-label="Удалить товар">X</a></td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х 200 руб.</td>
-              <td>300 руб.</td>
-            </tr>  
-            <tr>
-              <td><a href="#" aria-label="Удалить товар">X</a></td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х 300 руб.</td>
-              <td>450 руб.</td>
+      <button type="button" class="cart cart-active" name="basket">2 товара</button>
+        <div class="cart-full">
+          <table class="checkout">
+            <tr class="checkout-goods">
+              <td class="checkout-goods-delete"><button class="goods-reset-button" type="reset"></button></td>
+              <td class="checkout-goods-img"><img class="checkout-img-radius" src="img/checkout-icecream-1.jpg" alt="Пломбир с апельсиновым джемом"></td>
+              <td class="checkout-goods-name">Пломбир с апельсиновым джемом</td>
+              <td class="checkout-goods-quantity">1,5 кг х 200 руб.</td>
+              <td class="checkout-goods-amount">300 руб.</td>
+            </tr>
+            <tr class="checkout-goods">
+              <td class="checkout-goods-delete"><button class="goods-reset-button" type="reset"></button></td>
+              <td class="checkout-goods-img"><img class="checkout-img-radius" src="img/checkout-icecream-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td class="checkout-goods-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="checkout-goods-amount">1,5 кг х 300 руб.</td>
+              <td class="checkout-goods-amount">450 руб.</td>
             </tr>
           </table>
-          <span>Итого: 750 руб.</span>
-          <a href="#">Оформить заказ</a>
+         <div class="line"></div>
+          <span class="checkout-total-amount">Итого: 750 руб.</span>
+          <a class="checkout-button" href="#">Оформить заказ</a>
         </div>
-       </div> 
+       </div>
       <div class="opening-hours">
-      	<p>С 10 до 20, ежедневно<br> <a href="tel:+78124502525">8 812 450-25-25</a></p>
+      	<p>С 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
     </header>
     <main class="main-content containter">
@@ -80,39 +82,70 @@
           <form class="goods-filter" action="#" method="get">
             <fieldset class="filter-sort">
               <legend>Сортировка</legend>
-              <select name="sort" id="sort">
+              <select class="select" name="sort" id="sort">
                 <option value="popular">по популярности</option>
                 <option value="low-price">сначала не дорогие</option>
                 <option value="high-price">сначала дорогие</option>
                 <option value="fat">по жирности</option>
               </select>
             </fieldset>
-            <fieldset class="filter-price"> 
+            <fieldset class="filter-price">
               <legend>Цена: 100 руб. – 500 руб.</legend>
                <input type="range" id="price">
-            </fieldset> 
+            </fieldset>
             <fieldset class="filter-fat">
             <legend>Жирность</legend>
-              <label><input type="radio" id="fat-0" name="fat" value="0">0%</label>
-              <label><input type="radio" id="fat-to-10" name="fat" value="up to 10" checked>до 10%</label>
-              <label><input type="radio" id="fat-up-to-30" name="fat" value="up to 30">до 30%</label>
-              <label><input type="radio" id="fat-more-10" name="fat" value="more then 30">выше 30%</label>
-            </fieldset> 
+              <label class="radio">
+                <input class="radio-input" type="radio" name="fat" value="0">
+                <span class="radio-button"></span>
+                0%
+              </label>
+              <label class="radio">
+                <input class="radio-input"  type="radio" name="fat" value="up to 10" checked>
+                <span class="radio-button"></span>
+                до 10%
+              </label>
+              <label class="radio">
+                <input class="radio-input"  type="radio" name="fat" value="up to 30">
+                <span class="radio-button"></span>
+                до 30%
+              </label>
+              <label class="radio">
+                <input class="radio-input"  type="radio" name="fat" value="more then 30">
+                <span class="radio-button"></span>
+                выше 30%
+              </label>
+            </fieldset>
             <fieldset class="filter-filler">
               <legend>Наполнители:</legend>
-               <input type="checkbox" id="chocolate" checked>
-                 <label for="chocolate">шоколадные</label>
-               <input type="checkbox" id="sugar" checked>
-                 <label for="sugar">сахарные присыпки</label>
-               <input type="checkbox" id="fruit">
-                 <label for="fruit">фрукты</label>
-               <input type="checkbox" id="syrup">
-                 <label for="syrup">сиропы</label>
-               <input type="checkbox" id="jams">
-                 <label for="jams">джемы</label>
+                <label class="check">
+                  <input class="check-input" type="checkbox"checked>
+                  <span class="check-box"></span>
+                  шоколадные
+                </label>
+                <label class="check">
+                  <input class="check-input" type="checkbox" checked>
+                  <span class="check-box"></span>
+                  сахарные присыпки
+                </label>
+                <label class="check">
+                  <input class="check-input" type="checkbox">
+                  <span class="check-box"></span>
+                  фрукты
+                </label>
+                <label class="check">
+                  <input class="check-input" type="checkbox">
+                  <span class="check-box"></span>
+                  сиропы
+                </label>
+                <label class="check">
+                  <input class="check-input" type="checkbox">
+                  <span class="check-box"></span>
+                  джемы
+              </label>
             </fieldset>
-            <button type="submit">Применить</button>
-          </form> 
+            <button class="filter-button" type="submit">Применить</button>
+          </form>
         </section>
         <ul class="goods-list">
           <li class="goods-item">
@@ -142,7 +175,7 @@
               <p class="price">415&#8381;<span>/кг</span></p>
             </a>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          </li> 
+          </li>
           <li class="goods-item">
               <a class="goods-link" href="#">
               <img class="round" src="img/lingonberry.jpg" width="267" height="267"  alt="Сливочное с брусничным джемом">
@@ -202,7 +235,7 @@
         </ul>
       </section>
       <ul class="pagination-list">
-         <li class="pagination-item  prev"><a aria-label="Назад"></a></li> 
+         <li class="pagination-item  prev"><a aria-label="Назад"></a></li>
          <li class="pagination-item"><a href="#" aria-label="Страница 1">1</a></li>
          <li class="pagination-item"><a href="#" aria-label="Страница 2">2</a></li>
          <li class="pagination-item"><a href="#" aria-label="Страница 3">3</a></li>
@@ -213,10 +246,10 @@
     </main>
     <footer class="footer containter">
       <ul class="socials-list">
-        <li class="twitter"><a href="https://twitter.com" aria-label="Twitter"></a></li>
-        <li class="instagram"><a href="https://instagram.com" aria-label="Instagram"></a></li>
-        <li class="facebook"><a href="https://facebook.com" aria-label="Facebook"></a></li>
-        <li class="vkontakte"><a href="https://vk.com" aria-label="VK"></a></li>
+        <li class="socials-item twitter"><a href="https://twitter.com" aria-label="Twitter"></a></li>
+        <li class="socials-item instagram"><a href="https://instagram.com" aria-label="Instagram"></a></li>
+        <li class="socials-item facebook"><a href="https://facebook.com" aria-label="Facebook"></a></li>
+        <li class="socials-item vkontakte"><a href="https://vk.com" aria-label="VK"></a></li>
       </ul>
       <ul class="company-info-list">
          <li class="company-info-item"><a href="#">Для поставщиков</a></li>
