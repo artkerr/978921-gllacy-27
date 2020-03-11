@@ -148,10 +148,8 @@ img {
 .new{
 
 }
-
 .catalog-nav-list li:hover {
   background-color: #fbded7;
-  border-radius: 5px;
 }
 
 .catalog-nav-list li:active {
@@ -713,8 +711,8 @@ img {
   min-width: 368px;
   height: 44px;
   border-radius: 5px;
-  border: solid 1px var(--greyish-52);
-  background-color: #ffffff;
+  border: solid 1px rgba(178, 178, 178, 0.52);
+  background-color: #fff;
   margin-right: 11px;
   color: #999;
   padding-left: 12px;
@@ -830,7 +828,7 @@ img {
 .goods-item:hover:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: 11;
   left: -13px;
   top: -8px;
   width: 293px;
@@ -981,6 +979,7 @@ img {
 .slider-text {
  width: 670px;
   margin: -550px auto 400px auto;
+  text-align: center;
 }
 
 .slider-button {
@@ -1010,7 +1009,7 @@ img {
   width: 1200px;
   position:relative;
   overflow:hidden;
-  margin-left: -25px;
+  margin-left: -30px;
 }
 .map-pin {
   content: "";
