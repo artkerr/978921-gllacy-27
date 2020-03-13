@@ -417,7 +417,6 @@ img {
 .promo {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 35px;
   margin-top: -350px;
 }
 
@@ -429,9 +428,11 @@ img {
   min-height: 229px;
   border-radius: 15px;
   margin-right: 27px;
+
 }
 .second-promo {
   background-image: url("../img/chocolate-bg.jpg");
+  background-repeat: no-repeat;
   position: relative;
   background-color: #904101;
   width: 560px;
@@ -976,6 +977,10 @@ img {
   color: #fff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
+.bestsellers .goods-item{
+  margin-left: -40px;
+  padding-right: 50px;
+}
 .bestsellers .goods-item::before {
   content: "";
   background: url("../img/hits.svg") no-repeat;
@@ -1045,7 +1050,7 @@ img {
   color: #000;
 }
 
-.main-content .title {
+.main-content +.title {
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -1072,8 +1077,8 @@ img {
     flex-wrap: wrap;
     list-style: none;
     position: absolute;
-    top: 570px;
-    left: 5px;
+    top: 580px;
+    left: -35px;
 
 }
 .slick-dots li{
