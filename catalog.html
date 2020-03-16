@@ -26,9 +26,6 @@
           <li class="nav-item"><a href="#">О Компании</a></li>
         </ul>
       </nav>
-        <div class="opening-hours">
-          <p>С 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
-        </div>
       <button type="button" class="search-button" name="search"></button>
         <div class="search-area">
           <form class="" method="get">
@@ -74,6 +71,9 @@
           <span class="checkout-total-amount">Итого: 750 руб.</span>
           <a class="checkout-button btn" href="#">Оформить заказ</a>
         </div>
+        <div class="opening-hours">
+          <p>С 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
+        </div>
        </div>
     </header>
     <main class="main-content containter">
@@ -84,23 +84,26 @@
       </ul>
       <section>
         <h1 class="title">Сливочное мороженое</h1>
-        <section >
+        <section class="goods-filter">
           <h2 class="visually-hidden">Фильтр</h2>
           <form class="goods-filter" action="#" method="get">
-            <fieldset class="filter-sort">
-              <legend>Сортировка</legend>
-              <div class="select-wrapper">
-                <select class="select" name="sort" id="sort">
+            <fieldset class="filter-field">
+              <legend class="filter-title">Сортировка</legend>
+              <div class="filter-wrapper select">
+                <select class="filter-select" name="sort" id="sort">
                   <option value="popular">по популярности</option>
                   <option value="low-price">сначала не дорогие</option>
                   <option value="high-price">сначала дорогие</option>
                   <option value="fat">по жирности</option>
                 </select>
+                <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path d="M5.5 10L0 0h11"/>
+                </svg>
               </div>
             </fieldset>
-            <fieldset class="filter-price">
-              <legend>Цена: 100 руб. – 500 руб.</legend>
-                <div class="range-filter">
+            <fieldset class="filter-field">
+              <legend class="filter-title">Цена: 100 руб. – 500 руб.</legend>
+                <div class="filter-wrapper filter-price">
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar">
@@ -111,56 +114,60 @@
                   </div>
                 </div>
             </fieldset>
-            <fieldset class="filter-fat">
-            <legend>Жирность</legend>
-              <label class="radio">
-                <input class="radio-input" type="radio" name="fat" value="0">
-                <span class="radio-button"></span>
-                0%
-              </label>
-              <label class="radio">
-                <input class="radio-input"  type="radio" name="fat" value="up to 10" checked>
-                <span class="radio-button"></span>
-                до 10%
-              </label>
-              <label class="radio">
-                <input class="radio-input"  type="radio" name="fat" value="up to 30">
-                <span class="radio-button"></span>
-                до 30%
-              </label>
-              <label class="radio">
-                <input class="radio-input"  type="radio" name="fat" value="more then 30">
-                <span class="radio-button"></span>
-                выше 30%
-              </label>
+            <fieldset class="filter-field">
+                <legend class="filter-title">Жирность</legend>
+                <div class="filter-wrapper fat">
+                  <label class="radio">
+                    <input class="radio-input" type="radio" name="fat" value="0">
+                    <span class="radio-button"></span>
+                    <span class="radio-label">0%</span>
+                  </label>
+                  <label class="radio">
+                    <input class="radio-input"  type="radio" name="fat" value="up to 10" checked>
+                    <span class="radio-button"></span>
+                    <span class="radio-label">до 10%</span>
+                  </label>
+                  <label class="radio">
+                    <input class="radio-input"  type="radio" name="fat" value="up to 30">
+                    <span class="radio-button"></span>
+                    <span class="radio-label">до 30%</span>
+                  </label>
+                  <label class="radio">
+                    <input class="radio-input"  type="radio" name="fat" value="more then 30">
+                    <span class="radio-button"></span>
+                    <span class="radio-label">выше 30%</span>
+                  </label>
+                </div>
             </fieldset>
-            <fieldset class="filter-filler">
-              <legend>Наполнители:</legend>
+            <fieldset class="filter-field">
+              <legend class="filter-title">Наполнители:</legend>
+              <div class="filter-wrapper filler">
                 <label class="check">
                   <input class="check-input" type="checkbox"checked>
                   <span class="check-box"></span>
-                  шоколадные
+                  <span class="check-label">шоколадные</span>
                 </label>
                 <label class="check">
                   <input class="check-input" type="checkbox" checked>
                   <span class="check-box"></span>
-                  сахарные присыпки
+                  <span class="check-label">сахарные присыпки</span>
                 </label>
                 <label class="check">
                   <input class="check-input" type="checkbox">
                   <span class="check-box"></span>
-                  фрукты
+                  <span class="check-label">фрукты</span>
                 </label>
                 <label class="check">
                   <input class="check-input" type="checkbox">
                   <span class="check-box"></span>
-                  сиропы
+                  <span class="check-label">сиропы</span>
                 </label>
                 <label class="check">
                   <input class="check-input" type="checkbox">
                   <span class="check-box"></span>
-                  джемы
+                  <span class="check-label">джемы</span>
               </label>
+              </div>
             </fieldset>
             <button class="filter-button" type="submit">Применить</button>
           </form>
@@ -265,13 +272,25 @@
         </ul>
       </section>
       <ul class="pagination-list">
-         <li class="pagination-item"><a aria-label="Назад"></a></li>
-         <li class="pagination-item"><a href="#" aria-label="Страница 1">1</a></li>
+         <li class="pagination-item">
+           <a class="prev-pages disabled" aria-label="Назад">
+             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+               <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+             </svg>
+           </a>
+         </li>
+         <li class="pagination-item"><a href="" aria-label="Страница 1">1</a></li>
          <li class="pagination-item"><a href="#" aria-label="Страница 2">2</a></li>
          <li class="pagination-item"><a href="#" aria-label="Страница 3">3</a></li>
          <li class="pagination-item"><a href="#" aria-label="Страница 4">4</a></li>
          <li class="pagination-item"><a href="#" aria-label="Страница 5">5</a></li>
-         <li class="pagination-item"><a href="#" aria-label="Вперед"></a></li>
+         <li class="pagination-item">
+           <a class="next-page" href="#" aria-label="Вперед">
+             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+               <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+             </svg>
+           </a>
+         </li>
       </ul>
       <div class="line"></div>
     </main>
