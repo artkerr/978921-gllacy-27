@@ -67,6 +67,7 @@ img {
   padding-left: 15px;
   box-sizing: border-box;
 }
+
 .field:hover {
   border: solid 2px rgba(154, 154, 154, 0.52);
 }
@@ -179,11 +180,22 @@ img {
 .catalog-nav-item:first-child{
   padding: 3px 20px;
   border-radius: 5px 5px 0 0;
-  /*border-bottom: 1px solid #8996a6;*/
+
 }
+.catalog-nav-item:first-child:after{
+  content: "";
+  position: absolute;
+  top: 47px;
+  right: 5px;
+  width: 132px;
+  height: 1px;
+  background-color: #cacac7;
+}
+
 .catalog-nav-item:last-child {
   padding-bottom: 5px;
   border-radius: 0 0 5px 5px;
+
 }
 .catalog-nav-list li:hover {
   background-color: #fbded7;
@@ -255,7 +267,7 @@ img {
   display: block;
 }
 
-.popup-wrapper {
+.user-nav-wrapper {
   display: none;
   position: absolute;
   z-index: 1;
@@ -270,7 +282,7 @@ img {
   background-color: #f8f7f4;
   border-radius: 5px;
   padding-top: 5px;
-
+  vertical-align: middle;
 }
 .user-nav a {
   display: block;
@@ -304,7 +316,8 @@ img {
 .user-nav-button  {
   color: #fff;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 500;
+  line-height: 14px;
   background: rgba(255,255,255, 0.2);
   position: relative;
   border-radius: 20px;
@@ -330,14 +343,15 @@ img {
   background: url("../img/signin-active.svg") no-repeat;
   color: #323232;
 }
-.user-nav-button:hover +.popup-wrapper,
-.user-nav-button:focus +.popup-wrapper,
-.popup-wrapper:hover,
-.popup-wrapper:focus-within{
+.user-nav-button:hover +.user-nav-wrapper,
+.user-nav-button:focus +.user-nav-wrapper,
+.user-nav-wrapper:hover,
+.user-nav-wrapper:focus-within{
   display: block;
 }
 .cart {
   color: #fff;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   position: relative;
@@ -593,6 +607,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: none;
 }
 .select {
   min-width: 194px;
@@ -602,38 +617,54 @@ select {
 }
 
 .filter-select {
+  min-width: 170px;
+  min-height: 18px;
   background: none;
   font-weight: 500;
   color: #f8f7f4;
+  margin: 0;
 }
-.filter-select select{
 
-}
 .filter-select option {
   font-size: 14px;
   font-weight: 500;
-  color: #000;
-
-
+  color: #333;
 }
-.filter-select:active,
+.filter-select:hover,
 .filter-select:focus{
-
+  border: none;
+  background-color: #fff;
+  color: #323232;
 }
+.select:hover,
+.select:focus{
+  border: none;
+  background-color: #fff;
+  color: #323232;
+}
+.select:hover select{
+  color: #323232;
+}
+
 .select-icon {
   position: absolute;
+  z-index: 1;
   top: 15px;
-  right: 12px;
+  right: 17px;
   width: 11px;
   height: 10px;
   fill: #f8f7f4;
 }
-.select-icon:active,
-.select-icon:active {
-  fill: #000;
+
+.select-icon:hover,
+.select-icon:focus,
+.select-icon:active{
+  fill: #333;
+}
+.select-icon:focus,
+.select-icon:active{
   width: 9px;
   height: 5px;
-
 }
 
 .filter-price {
@@ -677,7 +708,10 @@ select {
 .range-controls .toggle-max {
   left: 133px;
 }
-
+.toggle:hover {
+  width: 20px;
+  height: 22px;
+}
 .fat {
   display: flex;
   justify-content: space-between;
@@ -687,6 +721,7 @@ select {
   position: relative;
   padding: 0 15px;
   font-weight: 500;
+
 }
 
 .radio-input {
@@ -694,6 +729,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
 }
 .radio {
   cursor: pointer;
@@ -758,11 +794,13 @@ select {
   opacity: 1;
 }
 .check-box:disabled,
-.radio-button:disabled {
-  opacity: 0.4;
+.radio-button:disabled,
+.check-label:disabled,
+.radio-label:disabled{
+  opacity: 0.1;
 }
-.filter-button{
 
+.filter-button{
   width: 144px;
   height: 37px;
   font-weight: 500;
@@ -793,7 +831,8 @@ select {
 
 .blog-new {
   background:#fff url("../img/strawberry-bg.jpg") no-repeat;
-  width: 560px;
+  min-width: 560px;
+  min-height: 220px;
   border-radius: 15px;
   padding-left: 20px;
   box-sizing: border-box;
@@ -1103,6 +1142,7 @@ select {
   margin-left: 30px;
   margin-top: -10px;
 }
+
 .slider {
   position: relative;
   padding-top: 321px;
@@ -1330,8 +1370,14 @@ select {
     transform: translateY(0);
   }
 }
-
-
+/*
+input[type="text"],
+input[type="email"],
+input[type="search"]{
+  color:#323232;
+  font-weight:  bold;
+}
+*/
 
 
 .developer {
