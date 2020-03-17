@@ -123,7 +123,7 @@ input[type="search"]{
 
 .nav-item {
   margin-right: 10px;
-  padding: 0 9px;
+  padding: 0 12px;
 }
 .nav-item:hover {
   background-color: #f7f6f3;
@@ -162,7 +162,7 @@ input[type="search"]{
   min-width: 143px;
   position: absolute;
   top: 26px;
-  left: 40px;
+  left: 28px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   padding: 0;
@@ -232,7 +232,7 @@ input[type="search"]{
   min-width: 33px;
   min-height: 33px;
   border-radius: 50%;
-  margin-left: 355px;
+  margin-left: auto;
   cursor: pointer;
 }
 .search-button::before {
@@ -259,7 +259,7 @@ input[type="search"]{
   padding-bottom: 10px;
   position: absolute;
   top: 45px;
-  right: 260px;
+  right: 265px;
   padding-top: 10px;
 }
 .search-area {
@@ -293,7 +293,7 @@ input[type="search"]{
   position: absolute;
   z-index: 1;
   top: 45px;
-  right: 155px;
+  right: 160px;
   padding-top: 10px;
 }
 .user-nav {
@@ -382,7 +382,7 @@ input[type="search"]{
   position: relative;
   background: rgba(255,255,255, 0.2);
   margin-left: 10px;
-
+  margin-right: 55px;
   padding-left: 30px;
   border-radius: 20px;
   min-width: 100px;
@@ -397,6 +397,7 @@ input[type="search"]{
   top: 7px;
   width: 21px;
   height: 19px;
+
 }
 
 .cart:hover:before {
@@ -408,6 +409,7 @@ input[type="search"]{
   background-color: #f7f6f3;
   font-weight: 500;
   color: #323232;
+  margin-right: 50px;
   cursor: pointer;
 }
 .cart-active:before {
@@ -929,7 +931,7 @@ select {
   position: absolute;
   z-index: 1;
   top: 45px;
-  right: 35px;
+  right: 50px;
   padding-top: 10px;
 }
 .cart-full {
