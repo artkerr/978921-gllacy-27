@@ -32,14 +32,12 @@ img {
 }
 .site-wrapper {
   min-width: 1200px;
-  background-color: #849d8f;
-  background-image: url("../img/slider-1.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: #849d8f url("../img/slider-1.png") no-repeat  top center;
 }
 .btn {
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   color: #fff;
   border-radius: 30px;
@@ -457,13 +455,13 @@ img {
 
 .promo {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .first-promo {
-  background-image: url("../img/raspberries-bg.jpg");
-  background-color: #DC143C;
+  background: #DC143C url("../img/raspberries-bg.jpg") no-repeat;
   position: relative;
   width: 560px;
   min-height: 229px;
@@ -472,10 +470,8 @@ img {
 
 }
 .second-promo {
-  background-image: url("../img/chocolate-bg.jpg");
-  background-repeat: no-repeat;
+  background: #904101 url("../img/chocolate-bg.jpg") no-repeat;
   position: relative;
-  background-color: #904101;
   width: 560px;
   min-height: 229px;
   border-radius: 15px;
@@ -500,13 +496,13 @@ img {
 
 }
 .promo-button {
-  display: inline-block;
   position: absolute;
   bottom: 10%;
   right: 3%;
   color: #fff;
   font-size: 18px;
   padding: 12px 26px;
+
 }
 
 .features {
@@ -773,7 +769,6 @@ select {
   margin-right: 16px;
 }
 .check-box {
-  display: inline-block;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -830,7 +825,7 @@ select {
 }
 
 .blog-new {
-  background:#fff url("../img/strawberry-bg.jpg") no-repeat;
+  background: #fff url("../img/strawberry-bg.jpg") no-repeat;
   min-width: 560px;
   min-height: 220px;
   border-radius: 15px;
@@ -846,7 +841,6 @@ select {
 
 }
 .blog-new a {
-  display: inline-block;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -935,6 +929,15 @@ select {
   position: relative;
 
 }
+.checkout:after {
+  content: "";
+  position: absolute;
+  top: 130px;
+  width: 510px;
+  margin-left: 15px;
+  height: 1px;
+  background: #cacac7;
+}
 .checkout-goods {
   height: 50px;
 }
@@ -969,12 +972,7 @@ select {
 .checkout-goods-amount {
   padding: 0 10px;
 }
-.line {
-  width: 510px;
-  margin-left: 15px;
-  height: 1px;
-  background: #cacac7;
-}
+
 
 .checkout-total-amount {
   font-size: 15px;
@@ -1106,12 +1104,13 @@ select {
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 55px;
-
+  margin-top: 45px;
+  margin-bottom: 23px;
+  margin-right: 40px;
 }
 .pagination-list a {
   display: block;
-  padding: 10px 15px;
+  padding: 6px 10px;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -1125,6 +1124,15 @@ select {
 .pagination-list a:active {
   opacity: 0.2;
   color: #000;
+}
+.pagination-list:after {
+  content: "";
+  position: absolute;
+  top: 55px;
+  width: 1150px;
+  height: 1px;
+  background: #cacac7;
+
 }
 .prev-pages {
   transform: rotate(180deg);
@@ -1170,13 +1178,10 @@ select {
 }
 
 .slider-button {
-  display: inline-block;
   padding: 12px 44px;
-
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
-
 }
 
 .slider-controls {
@@ -1197,6 +1202,7 @@ select {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: bottom;
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -1260,6 +1266,7 @@ select {
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
+  vertical-align: middle;
 }
 .adress p {
   font-size: 14px;
@@ -1282,19 +1289,16 @@ select {
   font-weight: bold;
   color: #fff;
 }
-.pagination-list + .line {
-  width: 1146px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.3);
-  margin-bottom: 18px;
-}
+
 
 /*Footer*/
 .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 50px;
 }
+
 
 .modal {
   display: none;
