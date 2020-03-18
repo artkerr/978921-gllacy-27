@@ -7,6 +7,11 @@ body {
 html {
   box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 a {
   text-decoration: none;
 }
@@ -31,7 +36,7 @@ img {
   overflow: hidden;
 }
 .site-wrapper {
-  min-width: 1200px;
+  min-width: 1146px;
   background: #849d8f url("../img/slider-1.png") no-repeat  top center;
 }
 .btn {
@@ -63,7 +68,6 @@ img {
   border: 1px solid #d3d3d2;
   background-color: #fff;
   padding-left: 15px;
-  box-sizing: border-box;
 }
 
 .field:hover {
@@ -91,8 +95,7 @@ input[type="search"]{
 /*Header*/
 
 .main-header-wrapper {
-  min-height: 67px;
-  margin-left: 27px;
+  min-height: 77px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -100,16 +103,15 @@ input[type="search"]{
   z-index: 10;
 }
 .container {
-  width: 1200px;
+  width: 1146px;
   margin: 0 auto;
-  padding: 0 27px;
 }
 
 .logo {
   width: 153px;
   height: 65px;
   border: none;
-  margin-left: -25px;
+
 }
 .nav-list {
   list-style: none;
@@ -264,8 +266,8 @@ input[type="search"]{
   display: none;
   padding-bottom: 10px;
   position: absolute;
-  top: 45px;
-  right: 265px;
+  top: 50px;
+  right: 210px;
   padding-top: 10px;
 }
 .search-area {
@@ -298,8 +300,8 @@ input[type="search"]{
   display: none;
   position: absolute;
   z-index: 1;
-  top: 45px;
-  right: 160px;
+  top: 50px;
+  right: 110px;
   padding-top: 10px;
 }
 .user-nav {
@@ -388,7 +390,6 @@ input[type="search"]{
   position: relative;
   background: rgba(255,255,255, 0.2);
   margin-left: 10px;
-  margin-right: 55px;
   padding-left: 30px;
   border-radius: 20px;
   min-width: 100px;
@@ -415,7 +416,6 @@ input[type="search"]{
   background-color: #f7f6f3;
   font-weight: 500;
   color: #323232;
-  margin-right: 50px;
   cursor: pointer;
 }
 .cart-active:before {
@@ -430,7 +430,7 @@ input[type="search"]{
 
 .opening-hours {
   position: absolute;
-  right: 50px;
+  right: 0;
   top: 56px;
   font-size: 14px;
   font-weight: bold;
@@ -440,7 +440,7 @@ input[type="search"]{
 
 .opening-hours a{
   font-size: 22px;
-  line-height: 24px;
+  line-height: 26px;
   text-align: right;
   color: #fff;
 }
@@ -489,30 +489,28 @@ input[type="search"]{
 
 .promo {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 40px;
+
 }
 
 .first-promo {
+  width: 560px;
+  min-height: 229px;
   background: #DC143C url("../img/raspberries-bg.jpg") no-repeat;
   position: relative;
-  width: 560px;
-  min-height: 229px;
   border-radius: 15px;
-  margin-right: 27px;
-
-
 }
 .second-promo {
-  background: #904101 url("../img/chocolate-bg.jpg") no-repeat;
-  position: relative;
   width: 560px;
   min-height: 229px;
+  background: #904101 url("../img/chocolate-bg.jpg") no-repeat;
+  position: relative;
   border-radius: 15px;
 }
 
-.first-promo .title ,
-.second-promo .title  {
+.promo-title {
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
@@ -520,8 +518,7 @@ input[type="search"]{
   padding-left: 20px;
   padding-top: 10px;
 }
-.first-promo p,
-.second-promo p {
+.promo-text {
   font-size: 18px;
   font-weight: bold;
   line-height: 22px;
@@ -536,7 +533,6 @@ input[type="search"]{
   color: #fff;
   font-size: 18px;
   padding: 12px 26px;
-
 }
 
 .features {
@@ -571,7 +567,6 @@ input[type="search"]{
 .features-item {
   width: 480px;
   margin-bottom: 25px;
-  padding-left: 25px;
   position: relative;
   line-height: 22px;
   letter-spacing: normal;
@@ -581,8 +576,8 @@ input[type="search"]{
   content: "";
   background: url("../img/icecream.svg") no-repeat;
   position: absolute;
-  top: -13px;
-  left: -44px;
+  top: -15px;
+  left: -55px;
   width: 49px;
   height: 49px;
 
@@ -592,8 +587,8 @@ input[type="search"]{
   content: "";
   background: url("../img/leaf.svg") no-repeat;
   position: absolute;
-  top: -17px;
-  left: -44px;
+  top: -18px;
+  left: -55px;
   width: 49px;
   height: 49px;
 }
@@ -602,8 +597,8 @@ input[type="search"]{
   content: "";
   background: url("../img/cow.svg") no-repeat;
   position: absolute;
-  top: -13px;
-  left: -30px;
+  top: -16px;
+  left: -52px;
   width: 49px;
   height: 49px;
 }
@@ -612,8 +607,8 @@ input[type="search"]{
   content: "";
   background: url("../img/termometr.svg") no-repeat;
   position: absolute;
-  top: -16px;
-  left: -30px;
+  top: -19px;
+  left: -52px;
   width: 49px;
   height: 49px;
 }
@@ -636,7 +631,6 @@ input[type="search"]{
 .filter-wrapper {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
-  box-sizing: border-box;
 }
 select::-ms-expand {
   display: none;
@@ -699,7 +693,7 @@ select {
   pointer-events: none;
 }
 
-.range-filter {
+.range-controls {
   min-width: 220px;
 }
 .toggle {
@@ -720,19 +714,19 @@ select {
   padding-left: 20px;
 }
 .range-controls .scale {
-  width: 220px;
+  width: 180px;
   height: 4px;
-  margin-left: -20px;
+  margin-left: 0;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .range-controls .bar {
   height: 4px;
-  width: 40%;
+  width: 100px;
   background-color: #fff;
-  margin-left: 45px;
+  margin-left: 30px;
 }
 .range-controls .toggle-min{
-  left: 30px;
+  left: 35px;
 }
 .range-controls .toggle-max {
   left: 130px;
@@ -756,7 +750,6 @@ select {
 
 .radio-input {
 
-
 }
 .radio {
   cursor: pointer;
@@ -771,10 +764,12 @@ select {
   background-size: 22px 22px;
   cursor: pointer;
 }
+
 .radio-label {
   padding-left: 30px;
-
 }
+
+
 .radio-input:checked + .radio-button {
   background: url("../img/radioOn.svg") no-repeat;
   background-size: 22px 22px;
@@ -836,7 +831,6 @@ select {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   margin-top: 20px;
-  box-sizing: border-box;
   cursor: pointer;
 }
 .filter-button:hover {
@@ -851,8 +845,8 @@ select {
 
 .wrapper-area {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  min-height: 220px;
   margin-bottom: 40px;
 }
 
@@ -862,8 +856,6 @@ select {
   min-height: 220px;
   border-radius: 15px;
   padding-left: 20px;
-  box-sizing: border-box;
-  margin-right: 29px;
 }
 
 .blog-new .title {
@@ -938,8 +930,8 @@ select {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 45px;
-  right: 50px;
+  top: 50px;
+  right: 0;
   padding-top: 10px;
 }
 .cart-full {
@@ -1039,8 +1031,7 @@ select {
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-  padding-left: 0;
-  padding-right: 50px;
+  padding: 0;
 }
 
 .goods-item {
@@ -1181,9 +1172,17 @@ select {
 }
 .pagination-list .disabled {
   opacity: 0.3;
-}.pagination-list .disabled:hover {
+}
+.pagination-list .disabled:hover {
    background-color: #849d8f;
- }
+}
+.pagination-list .active {
+  border-radius: 50%;
+  background-color: #fff;
+}
+.active a {
+  color: #323232;
+}
 
 .main-content +.title {
   font-size: 35px;
@@ -1236,8 +1235,8 @@ select {
 
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   margin-right: 8px;
 
   background-color: transparent;
@@ -1288,29 +1287,32 @@ select {
   width: 302px;
   min-height: 305px;
   background-color: #fff;
-  box-sizing: border-box;
   border-radius: 10px;
   position: absolute;
-  left: 71%;
-  top: 15%;
+  right: 5px;
+  top: 75px;
   padding-left: 25px;
   color: #323232;
 }
 
 .adress .title{
+  width: 150px;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
-  padding-top: 15px;
-  padding-right: 129px;
+  padding-top: 35px;
+
 }
 .adress span {
   display: inline-block;
+  width: 250px;
   font-size: 18px;
+  line-height: 24px;
   font-weight: bold;
-  vertical-align: middle;
+  margin-top: -5px;
 }
 .adress p {
+  width: 250px;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -1424,7 +1426,6 @@ select {
   line-height: 18px;
   text-align:left;
   color: #fefefe;
-  padding-right: 50px;
 }
 .developer a:last-child{
   color: #fefefe;
@@ -1444,17 +1445,17 @@ select {
   padding: 0;
 
 }
-.socials-item {
-  margin-right: 5px;
-}
 
 .socials-item a{
   display: block;
-  width: 32px;
-  height: 32px;
-  margin-right: 8px;
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
+}
+.socials-item:last-child a {
+  margin-right: 0;
 }
 
 .twitter {
@@ -1489,15 +1490,10 @@ select {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  align-content: baseline;
   width: 315px;
   padding: 0;
 }
-.company-info-item {
-  margin-top: -5px;
-  padding-bottom: 8px;
 
-}
 .company-info-item a{
   font-size: 13px;
   line-height: 18px;
