@@ -1334,7 +1334,6 @@ select {
   color: #fff;
 }
 
-
 /*Footer*/
 .footer {
   display: flex;
@@ -1342,7 +1341,6 @@ select {
   justify-content: space-between;
   margin-top: 10px;
 }
-
 
 .modal {
   display: none;
