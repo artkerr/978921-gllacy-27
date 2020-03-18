@@ -236,12 +236,10 @@ input[type="search"]{
 
 .search-button {
   position: relative;
-  background: rgba(255,255,255, 0.2);
   min-width: 33px;
-  min-height: 33px;
+  margin-right: 10px;
   border-radius: 50%;
   margin-left: auto;
-  cursor: pointer;
 }
 .search-button::before {
   content: "";
@@ -339,29 +337,29 @@ input[type="search"]{
 .password-field {
   margin-bottom: 25px;
 }
-.login-button {
-  position: absolute;
-  top: 125px;
-  min-width: 100px;
-  min-height: 44px;
-  margin-left: 15px;
-  margin-top: 30px;
-}
-.user-nav-button  {
+.header-button {
+  min-height: 32px;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
-  background: rgba(255,255,255, 0.2);
-  position: relative;
   border-radius: 20px;
-  padding-left: 33px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-left: 10px;
-  min-width: 93px;
-  height: 33px;
+  padding: 9px 0;
+  background: rgba(255,255,255, 0.2);
+}
+.login-button {
+  position: absolute;
+  top: 155px;
+  left: 20px;
+  min-width: 100px;
+  min-height: 44px;
+  border-radius: 20px;
   cursor: pointer;
+}
+.user-nav-button  {
+  position: relative;
+  min-width: 93px;
+  padding-left: 45px;
 }
 .user-nav-button::before {
   content: "";
@@ -383,18 +381,11 @@ input[type="search"]{
   display: block;
 }
 .cart {
-  color: #fff;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   position: relative;
-  background: rgba(255,255,255, 0.2);
-  margin-left: 10px;
-  padding-left: 30px;
-  border-radius: 20px;
   min-width: 100px;
-  height: 33px;
-  cursor: pointer;
+  margin-left: 10px;
+  padding-left: 45px;
+  min-width: 100px;
 }
 .cart::before {
   content: "";
@@ -404,7 +395,6 @@ input[type="search"]{
   top: 7px;
   width: 21px;
   height: 19px;
-
 }
 
 .cart:hover:before {
@@ -732,10 +722,7 @@ select {
   left: 130px;
 }
 .toggle:hover {
-  width: 20px;
-  height: 22px;
-  background-size: 24px 24px;
-  padding: 2px;
+  transform: scale(1.1);
 }
 .fat {
   display: flex;
@@ -1322,8 +1309,11 @@ select {
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
-  color: #323232;
-  }
+ }
+ .adress a[href^=tel] {
+  color: #323232
+}
+
 .adress a:hover{
   color: #ffbc9e
 }
@@ -1332,6 +1322,7 @@ select {
   height: 44px;
   font-weight: bold;
   color: #fff;
+  padding: 10px 0;
 }
 
 /*Footer*/
