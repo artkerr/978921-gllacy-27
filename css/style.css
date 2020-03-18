@@ -1340,7 +1340,6 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: top;
   margin-top: 10px;
 }
 
