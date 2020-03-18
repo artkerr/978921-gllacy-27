@@ -119,6 +119,7 @@ input[type="search"]{
   line-height: 32px;
   max-width: 700px;
   margin-left: -25px;
+  cursor: pointer;
 }
 
 .nav-item {
@@ -217,15 +218,20 @@ input[type="search"]{
 .catalog-nav-list li:visited {
   background-color: #d07058;
 }
+
 .active-sub-menu {
   background-color: #d07058;
 }
-.active-sub-menu a[href^="#"]{
+.active-sub-menu a[href*="#"]{
   color: #fff;
 }
 .active-sub-menu a:hover{
   color: #323232;
 }
+.catalog-nav-item:hover a{
+  color: #323232;
+}
+
 .search-button {
   position: relative;
   background: rgba(255,255,255, 0.2);
@@ -646,6 +652,7 @@ select {
   min-height: 37px;
   position: relative;
   padding: 9px 15px;
+
 }
 
 .filter-select {
@@ -654,6 +661,7 @@ select {
   background: none;
   font-weight: 500;
   color: #f8f7f4;
+  cursor: pointer;
 }
 
 .filter-select option {
@@ -1138,7 +1146,7 @@ select {
   flex-wrap: wrap;
   list-style: none;
   margin-top: 45px;
-  margin-bottom: 23px;
+  margin-bottom: 50px;
   margin-right: 40px;
 }
 .pagination-list a {
