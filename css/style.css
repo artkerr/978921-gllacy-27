@@ -15,11 +15,6 @@ html {
 a {
   text-decoration: none;
 }
-
-button {
-  border: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -50,6 +45,7 @@ img {
   background-image: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
   box-shadow: 0 1px 1px #ac1000;
   cursor: pointer;
+  border: none;
 }
 .btn:hover {
   background-color: #ed705e;
@@ -977,6 +973,7 @@ select {
   margin: 0 auto;
   background: url("../img/reset.svg") no-repeat;
   cursor: pointer;
+  border: none;
 }
 .checkout-goods-name {
   width: 220px;
@@ -1374,6 +1371,7 @@ select {
   position: absolute;
   top: 25px;
   right: 25px;
+  border: none;
   cursor: pointer;
 }
 
