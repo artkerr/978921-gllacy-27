@@ -1266,7 +1266,7 @@ select {
   margin-bottom: 10px;
 }
 .map {
-  width: 1200px;
+  width: 100%;
   margin-left: -27px;
 }
 
