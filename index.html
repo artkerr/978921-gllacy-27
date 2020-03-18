@@ -30,25 +30,25 @@
               <li class="nav-item"><a href="#">О Компании</a></li>
             </ul>
           </nav>
-          <a class="header-button search-button" href="#"></a>
+          <a class="header-button search-button" aria-label="Поиск по сайту" href="#"></a>
           <div class="search-wrapper">
             <div class="search-area">
-              <form class="" method="get">
-                <label  class="visually-hidden" for="search"></label>
+              <form class="" method="get" >
+                <label  class="visually-hidden" for="search">Поиск по сайту</label>
                 <input type="search" class="field search-field" id="search" placeholder="Крем-брюле">
               </form>
             </div>
           </div>
-          <a href="" class="header-button  user-nav-button">Вход</a>
+          <a href="" class="header-button  user-nav-button" aria-label="Вход в личный кабинет">Вход</a>
           <div class="user-nav-wrapper">
             <div class="user-nav">
               <form class="user-nav-form" method="get">
                 <p>
-                  <label class="visually-hidden" for="user-email"></label>
+                  <label class="visually-hidden" for="user-email">Email</label>
                   <input type="email" class="email-field field" id="user-email" name="user-email"  placeholder="email@example.com">
                 </p>
                 <p>
-                  <label for="user-password" class="visually-hidden"></label>
+                  <label for="user-password" class="visually-hidden">Пароль</label>
                   <input class="password-field field" id="user-password" type="password" name="password" placeholder="*******">
                 </p>
                 <button class="login-button btn" type="submit">Войти</button>
@@ -57,7 +57,7 @@
               <a href="#">Новая регистрация</a>
             </div>
           </div>
-          <a href="#" class="header-button cart">Пусто</a>
+          <a href="#" class="header-button cart" aria-label="Корзина с товарами">Пусто</a>
           <div class="opening-hours">
             <p>С 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
           </div>
@@ -161,7 +161,7 @@
   		       <h2 class="visually-hidden">Подписка</h2>
   		       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить  и не слать всякой ненужной ерунды. Честно =)</p>
              <form action="#" class="subscribe-form" method="post">
-  		         <input type="email" class="subscribe-email field" name="email" placeholder="email@example.com">
+  		         <input type="email" class="subscribe-email field" name="email" aria-label="Email" placeholder="email@example.com">
   		         <button type="submit" class="subscribe-button btn">Отправить</button>
              </form>
   		     </section>
@@ -214,11 +214,11 @@
               <input type="email" class="email-field field" id="email" name="user-email"  placeholder="email@example.com">
             </p>
             <p>
-               <label for="user-message"></label>
+               <label for="user-message">Сообшение</label>
                <textarea class="mesagge-area field" name="message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </p>
             <button class="modal-button btn" type="submit">Отправить</button>
-            <button class="close-button" type="button"></button>
+            <button class="close-button" type="button" aria-label="Закрыть окно"></button>
           </form>
         </section>
       </div>

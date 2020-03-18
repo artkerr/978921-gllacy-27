@@ -71,14 +71,13 @@ img {
 }
 .field:focus{
   border: solid 2px rgba(46, 136, 228, 0.52);
-  outline: none;
 }
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="search"]::placeholder,
 textarea::placeholder{
   color: #999;
-  font-weight:  normal;
+  font-weight: normal;
 }
 
 input[type="text"],
