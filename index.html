@@ -63,7 +63,8 @@
           </div>
       </div>
       </header>
-      <main class="main-content container">
+      <main class="main-content">
+        <div class="container">
         <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
         <section class="slider">
           <div class="slider-controls">
@@ -166,7 +167,8 @@
              </form>
   		     </section>
          </div>
-         <section class="contacts">
+        </div>
+         <section class="contacts container">
            <div class="map">
              <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт-Петербург</a>
              <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=37.622504%2C55.753215&sspn=1.093140%2C0.397310&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
@@ -180,7 +182,6 @@
             (с 10 до 20 ежедневно)</p>
              <a href="/feedback.html" class="feedback-button btn">Форма обратной связи</a>
            </div>
-
          </section>
       </main>
       <footer class="footer container">
@@ -207,14 +208,14 @@
           <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
             <p>
               <label class="visually-hidden" for="login">Имя и Фамилия</label>
-              <input type="text" class="user-name-field field" id="login" name="user-name" placeholder="Имя Фамилия">
+              <input type="text" class="user-name-field field" id="login" name="user-name" required placeholder="Имя Фамилия">
             </p>
             <p>
               <label class="visually-hidden" for="email">Email</label>
-              <input type="email" class="email-field field" id="email" name="user-email"  placeholder="email@example.com">
+              <input type="email" class="email-field field" id="email" name="user-email" required placeholder="email@example.com">
             </p>
             <p>
-               <label for="user-message">Сообшение</label>
+               <label for="user-message" class="visually-hidden">Сообшение</label>
                <textarea class="mesagge-area field" name="message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </p>
             <button class="modal-button btn" type="submit">Отправить</button>
@@ -222,6 +223,6 @@
           </form>
         </section>
       </div>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
     </body>
   </html>

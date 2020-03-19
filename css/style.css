@@ -692,6 +692,7 @@ select {
   cursor: pointer;
 
 }
+
 .range-controls {
   position: relative;
   padding-top: 16.5px;
@@ -713,12 +714,14 @@ select {
 .range-controls .toggle-min{
   left: 35px;
 }
+
 .range-controls .toggle-max {
   left: 130px;
 }
 .toggle:hover {
   transform: scale(1.1);
 }
+
 .fat {
   display: flex;
   justify-content: space-between;
@@ -750,8 +753,6 @@ select {
 .radio-label {
   padding-left: 30px;
 }
-
-
 .radio-input:checked + .radio-button {
   background: url("../img/radioOn.svg") no-repeat;
   background-size: 22px 22px;
@@ -777,7 +778,7 @@ select {
   margin-right: 16px;
 }
 .check-box {
-  width: 20px;
+  width: 22px;
   height: 20px;
   position: absolute;
   padding: 6px;
@@ -797,11 +798,10 @@ select {
 .radio-button:checked:hover {
   opacity: 1;
 }
-.check-box:disabled,
-.radio-button:disabled,
-.check-label:disabled,
-.radio-label:disabled{
-  opacity: 0.1;
+
+.radio-button:focus + .radio-label,
+.check-box:focus + .check-label {
+  outline:1px;
 }
 
 .filter-button{
@@ -1264,6 +1264,7 @@ select {
 .map {
   width: 100%;
   margin-left: -27px;
+
 }
 
 .adress {
