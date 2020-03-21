@@ -741,6 +741,7 @@ select {
   align-items: center;
   cursor: pointer;
   margin-right: 5px;
+
 }
 
 .radio-label::before{
@@ -753,11 +754,14 @@ select {
   cursor: pointer;
 
 }
+.radio-label:hover:before{
+  opacity: 1;
+}
 .radio-input:checked + .radio-label::before{
   content: "";
   width: 25px;
   height: 25px;
-  opacity: 0.7;
+  opacity: 1;
   background: url("../img/radioOn.svg") no-repeat;
   background-size: 22px 22px;
   cursor: pointer;
@@ -789,6 +793,7 @@ select {
   content: "";
   width: 27px;
   height: 20px;
+  opacity: 0.7;
   background: url("../img/checkboxOff.svg") no-repeat;
   background-size: 20px 20px;
 }
@@ -797,6 +802,7 @@ select {
   content: "";
   width: 27px;
   height: 22px;
+  opacity: 1;
   background: url("../img/checkboxOn.svg") no-repeat;
   background-size: 22px 22px;
 }
@@ -805,13 +811,9 @@ select {
   outline: solid 2px rgba(46, 136, 228, 0.52);
 }
 
-.check-box:hover,
-.check-box:checked:hover,
-.radio-button:hover,
-.radio-button:checked:hover {
+.checkbox-label:hover:before{
   opacity: 1;
 }
-
 
 .filter-button{
   width: 144px;
@@ -946,6 +948,7 @@ select {
 
 
 .checkout {
+  width: 100%;
   padding: 15px 0;
   position: relative;
 
@@ -961,10 +964,12 @@ select {
 }
 .checkout-goods {
   height: 50px;
+
 }
 .checkout-goods-img {
   width: 33px;
   height: 33px;
+
 }
 .checkout-img-radius {
   border-radius: 33px;
@@ -984,15 +989,18 @@ select {
   border: none;
 }
 .checkout-goods-name {
-  width: 220px;
-  padding: 0 10px;
+  width: 250px;
+  padding-left: 10px;
+
 }
 .checkout-goods-quantity {
-  width: 100px;
+  width: 130px;
   padding: 0 10px;
+
 }
 .checkout-goods-amount {
   padding: 0 10px;
+
 }
 
 
