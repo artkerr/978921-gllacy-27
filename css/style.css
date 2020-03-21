@@ -1276,14 +1276,19 @@ select {
   width: 100%;
   position: absolute;
 }
-
+.adress-wrapper {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
 .adress {
   width: 302px;
   min-height: 305px;
   background-color: #fff;
   border-radius: 10px;
   position: absolute;
-  right: 20%;
+  right: 30px;
   top: 70px;
   padding-left: 25px;
   color: #323232;
