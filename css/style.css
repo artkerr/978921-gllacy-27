@@ -614,6 +614,11 @@ input[type="search"]{
   padding-left: 15px;
 }
 .filter-wrapper {
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
 }
@@ -690,9 +695,7 @@ select {
   width: 20px;
   height: 22px;
   cursor: pointer;
-
 }
-
 .range-controls {
   position: relative;
   padding-top: 16.5px;
@@ -723,84 +726,27 @@ select {
 }
 
 .fat {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   min-width: 415px;
-  height: 37px;
-  position: relative;
   padding: 0 15px;
-  font-weight: 500;
 }
 
-.radio {
-  cursor: pointer;
-}
-.radio-button{
-  width: 25px;
-  height: 25px;
-  top: 7px;
-  position: absolute;
-  opacity: 0.7;
-  background: url("../img/radioOff.svg") no-repeat;
-  background-size: 22px 22px;
-  cursor: pointer;
-}
-
-.radio-label {
-  padding-left: 30px;
-}
-.radio-input:checked + .radio-button {
-  background: url("../img/radioOn.svg") no-repeat;
-  position: absolute;
-  background-size: 22px 22px;
-}
-
-.radio-input:focus + .radio {
-  outline: solid 2px rgba(46, 136, 228, 0.52);
-
+.radio-input:focus + .radio-label {
+  outline: 1px;
 }
 
 .filler  {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 703px;
-  height: 37px;
   padding: 0 10px;
-  font-weight: 500;
+  position: relative;
 }
-.check {
-  cursor: pointer;
-}
-.check-input {
 
+.checkbox-label {
+  padding-left: 40px;
 }
-.check-label {
-  padding-left: 30px;
-  margin-right: 16px;
+.checkbox-input:focus + .checkbox-label {
+  outline: 1px;
 }
-.check-box {
-  width: 22px;
-  height: 20px;
-  position: absolute;
-  padding: 6px;
-  opacity: 0.8;
-  background: url("../img/checkboxOff.svg") no-repeat;
-  background-size: 20px 20px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.check-input:checked + .check-box {
-  background: url("../img/checkboxOn.svg") no-repeat;
-  background-size: 24px 20px;
-}
-.check-box:hover,
-.check-box:checked:hover,
-.radio-button:hover,
-.radio-button:checked:hover {
-  opacity: 1;
-}
+
 
 
 .filter-button{
