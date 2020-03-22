@@ -4,14 +4,14 @@ var popup = document.querySelector(".modal");
 var close = popup.querySelector(".close-button");
 
 var form = popup.querySelector(".feedback");
-var login = popup.querySelector("[name=user-name]");
+var userName = popup.querySelector("[name=user-name]");
 var userEmail = popup.querySelector("[name=user-email]");
 
 var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("login");
+  storage = localStorage.getItem("userName");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -21,22 +21,22 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
 
   if (storage) {
-    userEmail.value = storage;
+    userName.value = storage;
     userEmail.focus();
   } else {
-    login.focus();
+    userName.focus();
   }
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!login.value || !userEmail.value) {
+  if (!userName.value || !userEmail.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("login", login.value);
+      localStorage.setItem("userEmail", userEmail.value);
     }
   }
 });
